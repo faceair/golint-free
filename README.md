@@ -7,7 +7,7 @@ From [`golint`](https://github.com/golang/lint/#purpose):
 
 `go get -u github.com/hnry/golint-free`
 
-create `$HOME/.golint-free` to be a JSON with 2 fields:
+create `$GOPATH/.golint-free` to be a JSON with 2 fields:
 
 - golint
   > String for file path to golint (must be absolute path, no ENV vars)
