@@ -18,7 +18,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/golang/lint"
+	"golang.org/x/lint"
 )
 
 type configFile struct {
