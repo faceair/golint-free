@@ -141,6 +141,7 @@ func loggerSuggestion(line string) {
 		}
 	}
 	if !ignoreOutput {
+		suggestions++
 		fmt.Print(line)
 	}
 }
@@ -165,7 +166,6 @@ func lintFiles(filenames ...string) {
 	for _, p := range ps {
 		if p.Confidence >= *minConfidence {
 			loggerSuggestion(fmt.Sprintf("%v: %s\n", p.Position, p.Text))
-			suggestions++
 		}
 	}
 }
